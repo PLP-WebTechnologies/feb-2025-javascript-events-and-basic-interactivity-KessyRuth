@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Page</title>
+    
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #6200ea;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #3700b3;
+        }
+
+        input {
+            display: block;
+            margin: 5px 0;
+            padding: 5px;
+            width: 250px;
+        }
+
+        #feedback {
+            color: red;
+        }
+
+        #funImage {
+            width: 150px;
+            margin-top: 20px;
+            transition: transform 0.4s ease;
+        }
+
+        #funImage:hover {
+            transform: scale(1.2) rotate(5deg);
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Hello, Welcome!</h1>
+    <button id="colorButton">Click Me!</button><br><br>
+    <p id="secretM" hidden>How are you Today?</p>
+
+    <img id="funImage" src="pythonbk.jpg" alt="Dancing pic" width="400" height="200"/>
+
+
+    <form id="signupform">
+        <input type="text" id="name" placeholder="Your name" required/><br><br>
+        <input type="email" id="email" placeholder="Your email" required /><br><br>
+        <input type="password" id="password" placeholder="Password" required /><br><br>
+        <small id="feedback"></small>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
